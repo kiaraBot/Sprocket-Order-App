@@ -1,0 +1,34 @@
+﻿<Window x:Name="winSprocketForm" x:Class="FieldP5_CSharp.SprocketForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FieldP5_CSharp"
+        mc:Ignorable="d"
+        Title="Sprocket Form" Height="366.431" Width="495.664" FontSize="14" Background="#FF817B7B">
+    <Grid>
+        <Label x:Name="lbTitle" Content="Sprocket Form" HorizontalAlignment="Left" Margin="29,21,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Historic" Foreground="#FF22222E"/>
+        <Label x:Name="lbItemID" Content="Item Id" HorizontalAlignment="Left" Margin="29,80,0,0" VerticalAlignment="Top" Foreground="#FF22222E" FontFamily="Segoe UI Historic" FontWeight="Bold"/>
+        <Label x:Name="lbItemType" Content="Item Type" HorizontalAlignment="Left" Margin="29,120,0,0" VerticalAlignment="Top" Foreground="#FF22222E" FontFamily="Segoe UI Historic" FontWeight="Bold"/>
+        <Label x:Name="lbNumTeeth" Content="Number of Teeth" HorizontalAlignment="Left" Margin="29,160,0,0" VerticalAlignment="Top" Foreground="#FF22222E" FontFamily="Segoe UI Historic" FontWeight="Bold"/>
+        <Label x:Name="lbNumItems" Content="Number of Items" HorizontalAlignment="Left" Margin="29,200,0,0" VerticalAlignment="Top" Foreground="#FF22222E" FontFamily="Segoe UI Historic" FontWeight="Bold"/>
+        <TextBox x:Name="tbxItemID" HorizontalAlignment="Left" Height="23" Margin="179,80,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="261" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" BorderBrush="DimGray"/>
+        <TextBox x:Name="tbxNumTeeth" HorizontalAlignment="Left" Height="23" Margin="179,160,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="261" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" BorderBrush="DimGray"/>
+        <TextBox x:Name="tbxNumItem" HorizontalAlignment="Left" Height="23" Margin="179,200,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="261" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" BorderBrush="DimGray"/>
+        <ComboBox x:Name="cbxItemType" HorizontalAlignment="Left" Margin="179,120,0,0" VerticalAlignment="Top" Width="261" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" BorderBrush="DimGray">
+            <ComboBoxItem BorderBrush="#FF22222E" BorderThickness="2,1,2,0" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" Content="Aluminum" FontSize="12" FontFamily="Segoe UI Historic"/>
+            <ComboBoxItem BorderBrush="#FF22222E" BorderThickness="2,1,2,2" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" Content="Plastic" FontSize="12" FontFamily="Segoe UI Historic"/>
+            <ComboBoxItem BorderBrush="#FF22222E" BorderThickness="2,1,2,2" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" Content="Steel" FontSize="12" FontFamily="Segoe UI Historic"/>
+        </ComboBox>
+        <Button x:Name="btnSubmitItem" Content="Submit Item" HorizontalAlignment="Left" Margin="66,266,0,0" VerticalAlignment="Top" Width="128" Foreground="#FF22222E" FontFamily="Segoe UI Historic" FontSize="16" FontWeight="Bold" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" BorderThickness="2,1,2,2" Height="30" Click="btnSubmitItem_Click" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
+            <Button.Effect>
+                <DropShadowEffect Color="DimGray"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnCancelForm" Content="Cancel" HorizontalAlignment="Left" Margin="288,266,0,0" VerticalAlignment="Top" Width="128" Foreground="#FF22222E" FontFamily="Segoe UI Historic" FontSize="16" FontWeight="Bold" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" BorderThickness="2,1,2,2" Height="30" Click="btnCancelForm_Click" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
+            <Button.Effect>
+                <DropShadowEffect Color="DimGray"/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>
